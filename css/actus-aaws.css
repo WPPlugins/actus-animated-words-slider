@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900&subset=cyrillic,greek');
+
+#actus-aaws-box * { box-sizing: border-box; }
+
+
+.actus-animated-tag {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    line-height: 0.6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+
+.actus-clear { clear: both }
+
+/****************************************** SETTINGS */ 
+
+
+.actus-aaws-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.actus-aaws-frame,
+#actus-aaws-words,
+#actus-aaws-slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#actus-aaws-words { z-index: 2 }
+.actus-aaws-frame { position: relative; }
+
+.actus-aaws-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale( 1.1 );
+    /*
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+    */
+}
+.actus-aaws-slide.faded {
+    opacity: 0;
+}
+.actus-aaws-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
